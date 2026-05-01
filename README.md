@@ -117,7 +117,7 @@ npm run dev
 cd frontend
 npm install
 cp .env.local.example .env.local
-# Edit .env.local — set NEXT_PUBLIC_API_URL=http://localhost:5003/api
+# Edit .env.local — set NEXT_PUBLIC_API_URL=http://localhost:5002/api
 npm run dev
 ```
 
@@ -130,7 +130,7 @@ Open [http://localhost:3000](http://localhost:3000).
 ### Backend (`backend/.env`)
 
 ```env
-PORT=5003
+PORT=5002
 MONGO_URI=mongodb+srv://<user>:<pass>@cluster0.xxxxx.mongodb.net/taskflow?retryWrites=true&w=majority
 JWT_SECRET=your_super_secret_key_min_32_chars
 JWT_EXPIRES_IN=7d
@@ -141,7 +141,7 @@ FRONTEND_URL=http://localhost:3000
 ### Frontend (`frontend/.env.local`)
 
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:5003/api
+NEXT_PUBLIC_API_URL=http://localhost:5002/api
 ```
 
 ---
